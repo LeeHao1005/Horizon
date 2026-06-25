@@ -48,28 +48,70 @@
     },
     "rss": [
       {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/atom/everything/",
+        "name": "IACR ePrint 密码学论文",
+        "url": "https://eprint.iacr.org/rss/rss.xml?format=nonstandard",
         "enabled": true,
-        "category": "ai-tools"
+        "category": "pqc"
       },
       {
-        "name": "GitHub Trending - Daily",
-        "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+        "name": "Cloudflare Blog (PQ 迁移)",
+        "url": "https://blog.cloudflare.com/rss/",
         "enabled": true,
-        "category": "github-trending"
+        "category": "pqc"
       },
       {
-        "name": "Semianalysis",
-        "url": "https://newsletter.semianalysis.com/feed",
+        "name": "Neil Madden (后量子密码)",
+        "url": "https://neilmadden.blog/feed/",
         "enabled": true,
-        "category": "semiconductors"
+        "category": "pqc"
       },
       {
-        "name": "LWN.net",
-        "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
+        "name": "Filippo Valsorda (Go 密码学)",
+        "url": "https://words.filippo.io/feed/",
         "enabled": true,
-        "category": "linux-kernel"
+        "category": "pqc"
+      },
+      {
+        "name": "Schneier on Security",
+        "url": "https://www.schneier.com/feed/",
+        "enabled": true,
+        "category": "pqc"
+      },
+      {
+        "name": "Trail of Bits Blog",
+        "url": "https://blog.trailofbits.com/feed/",
+        "enabled": true,
+        "category": "pqc"
+      },
+      {
+        "name": "IETF Blog (标准动态)",
+        "url": "https://www.ietf.org/blog/feed/",
+        "enabled": true,
+        "category": "pqc"
+      },
+      {
+        "name": "IETF 新标准 RFC (PQC 标准化)",
+        "url": "https://datatracker.ietf.org/feed/rfc/",
+        "enabled": true,
+        "category": "pqc"
+      },
+      {
+        "name": "NIST Cybersecurity (安全公告)",
+        "url": "https://www.nist.gov/news-events/cybersecurity/rss.xml",
+        "enabled": true,
+        "category": "pqc"
+      },
+      {
+        "name": "NIST CSRC Drafts (标准草案)",
+        "url": "https://csrc.nist.gov/CSRC/media/feeds/pubs/drafts-open-for-comment.xml",
+        "enabled": true,
+        "category": "pqc"
+      },
+      {
+        "name": "GSMA Newsroom (移动安全标准)",
+        "url": "https://www.gsma.com/newsroom/feed/",
+        "enabled": true,
+        "category": "pqc"
       }
     ],
     "reddit": {
