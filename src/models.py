@@ -272,7 +272,7 @@ class SourcesConfig(BaseModel):
     hackernews: HackerNewsConfig = Field(default_factory=HackerNewsConfig)
     rss: List[RSSSourceConfig] = Field(default_factory=list)
     reddit: RedditConfig = Field(default_factory=RedditConfig)
-    sca: Optional[ScaConfig] = None
+    # sca: Optional[ScaConfig] = None  # TODO: WIP
     telegram: TelegramConfig = Field(default_factory=TelegramConfig)
     twitter: Optional[TwitterConfig] = None
     openbb: Optional[OpenBBConfig] = None
