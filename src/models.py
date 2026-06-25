@@ -1,5 +1,7 @@
 """Core data models for Horizon."""
 
+from __future__ import annotations
+
 from datetime import datetime, timezone
 from enum import Enum
 from typing import Optional, List, Dict, Any, Union
