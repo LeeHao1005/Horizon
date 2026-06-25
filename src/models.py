@@ -17,6 +17,7 @@ class SourceType(str, Enum):
     TWITTER = "twitter"
     OPENBB = "openbb"
     OSSINSIGHT = "ossinsight"
+    SCA = "sca"
 
 
 class ContentItem(BaseModel):
@@ -271,6 +272,7 @@ class SourcesConfig(BaseModel):
     hackernews: HackerNewsConfig = Field(default_factory=HackerNewsConfig)
     rss: List[RSSSourceConfig] = Field(default_factory=list)
     reddit: RedditConfig = Field(default_factory=RedditConfig)
+    sca: Optional[ScaConfig] = None
     telegram: TelegramConfig = Field(default_factory=TelegramConfig)
     twitter: Optional[TwitterConfig] = None
     openbb: Optional[OpenBBConfig] = None
@@ -365,7 +367,7 @@ class CategoryGroupConfig(BaseModel):
     """A quota group containing one or more source categories."""
 
     name: Optional[str] = None
-    limit: int = Field(gt=0)
+    limit: int = Field(ge=0)
     categories: List[str] = Field(min_length=1)
 
 
@@ -374,10 +376,10 @@ class FilteringConfig(BaseModel):
 
     ai_score_threshold: float = 7.0
     time_window_hours: int = 24
-    max_items: Optional[int] = Field(default=None, gt=0)
+    max_items: Optional[int] = Field(default=None, ge=0)
     category_groups: Dict[str, CategoryGroupConfig] = Field(default_factory=dict)
     default_group: str = "other"
-    default_group_limit: Optional[int] = Field(default=None, gt=0)
+    default_group_limit: Optional[int] = Field(default=None, ge=0)
 
 
 class Config(BaseModel):
@@ -389,3 +391,9 @@ class Config(BaseModel):
     filtering: FilteringConfig
     email: Optional[EmailConfig] = None
     webhook: Optional[WebhookConfig] = None
+class ScaConfig(BaseModel):
+    """国密局 (State Cryptography Administration) scraper configuration."""
+
+    enabled: bool = False
+    announcements_url: Optional[str] = None
+    max_items: int = 10

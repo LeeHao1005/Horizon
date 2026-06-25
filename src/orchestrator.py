@@ -22,6 +22,7 @@ from .scrapers.twitter import TwitterScraper
 from .scrapers.twitter_playwright import TwitterPlaywrightScraper
 from .scrapers.openbb import OpenBBScraper
 from .scrapers.ossinsight import OSSInsightScraper
+from .scrapers.sca import ScaScraper
 from .ai.client import create_ai_client
 from .ai.analyzer import ContentAnalyzer
 from .ai.summarizer import DailySummarizer
@@ -295,10 +296,13 @@ class HorizonOrchestrator:
                 openbb_scraper = OpenBBScraper(self.config.sources.openbb, client)
                 tasks.append(self._fetch_with_progress("OpenBB", openbb_scraper, since))
 
-            # OSS Insight trending repos
-            if self.config.sources.ossinsight and self.config.sources.ossinsight.enabled:
+           # OSS Insight trending repos            if self.config.sources.ossinsight and self.config.sources.ossinsight.enabled:
                 oss_scraper = OSSInsightScraper(self.config.sources.ossinsight, client)
                 tasks.append(self._fetch_with_progress("OSS Insight", oss_scraper, since))
+            # 国密局 SCA
+            if self.config.sources.sca and self.config.sources.sca.enabled:
+                sca_scraper = ScaScraper(self.config.sources.sca, client)
+                tasks.append(self._fetch_with_progress("国密局 SCA", sca_scraper, since))
 
             # Fetch all concurrently
             results = await asyncio.gather(*tasks, return_exceptions=True)
