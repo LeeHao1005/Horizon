@@ -149,8 +149,18 @@
     }
   },
   "filtering": {
-    "ai_score_threshold": 8.0,
-    "time_window_hours": 24
+    "ai_score_threshold": 7.0,
+    "time_window_hours": 72,
+    "max_items": 20,
+    "category_groups": {
+      "pqc": {
+        "name": "抗量子密码",
+        "limit": 15,
+        "categories": ["pqc"]
+      }
+    },
+    "default_group": "other",
+    "default_group_limit": 0
   },
   "webhook": {
     "enabled": false,
