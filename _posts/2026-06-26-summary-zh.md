@@ -5,342 +5,326 @@ date: 2026-06-26
 lang: zh
 ---
 
-> 从 39 条内容中筛选出 15 条重要资讯。
+> 从 42 条内容中筛选出 15 条重要资讯。
 
 ---
 
-1. [UA-8295 后门终端的首次详细法证密码分析](#item-1) ⭐️ 9.0/10
-2. [可验证编辑音频的匿名溯源新方案](#item-2) ⭐️ 8.0/10
-3. [面向三分之二诚实多数的通信高效恶意安全多方计算协议](#item-3) ⭐️ 8.0/10
-4. [通过规范编码修复实现 SQIsign 的强不可伪造性](#item-4) ⭐️ 8.0/10
-5. [白宫行政令要求 2030 年前迁移至后量子密码](#item-5) ⭐️ 8.0/10
-6. [德国法院裁定谷歌 AI 概览责任成立](#item-6) ⭐️ 8.0/10
-7. [LLMs 凭风格而非标签辨识角色，致提示注入攻击持续](#item-7) ⭐️ 8.0/10
-8. [间谍软件嵌入禁用文本逃避 AI 分析](#item-8) ⭐️ 8.0/10
-9. [可调密钥交替 Feistel 密码的后量子安全性](#item-9) ⭐️ 7.0/10
-10. [钱包干预措施降低授权钓鱼风险](#item-10) ⭐️ 7.0/10
-11. [TETRIS：掩码硬件中随机性-延迟权衡的自动化设计空间探索](#item-11) ⭐️ 7.0/10
-12. [Cloudflare 向所有开发者提供自主管理型 OAuth](#item-12) ⭐️ 7.0/10
-13. [Java SSLContext 协议名称陷阱：易引发安全配置错误](#item-13) ⭐️ 7.0/10
-14. [专家称大型语言模型降低漏洞报告的特殊性](#item-14) ⭐️ 7.0/10
-15. [Anthropic 的 Fable 5 安全模型数日内遭越狱](#item-15) ⭐️ 7.0/10
+1. [可验证编辑音频的匿名溯源方案](#item-1) ⭐️ 8.0/10
+2. [钱包用户干预设计抵御授权钓鱼攻击](#item-2) ⭐️ 8.0/10
+3. [对植入后门的 UA-8295 消息终端的取证密码分析](#item-3) ⭐️ 8.0/10
+4. [基于本地验证的高效恶意安全多方计算协议](#item-4) ⭐️ 8.0/10
+5. [白宫后量子行政令设定 2030 年迁移期限](#item-5) ⭐️ 8.0/10
+6. [漏洞报告不再特殊](#item-6) ⭐️ 8.0/10
+7. [德国法院裁定谷歌对 AI 搜索摘要负责](#item-7) ⭐️ 8.0/10
+8. [LLM 无法真正感知角色，提示注入威胁持续](#item-8) ⭐️ 8.0/10
+9. [NIST 发布物联网网络安全指南修订草案](#item-9) ⭐️ 8.0/10
+10. [GSMA 发布电信通用语料库：10B+ tokens 开放数据集](#item-10) ⭐️ 8.0/10
+11. [多密钥设置下可调 Feistel 密码的后量子安全证明](#item-11) ⭐️ 7.0/10
+12. [BN 配对子群被证明为相对迹映射核](#item-12) ⭐️ 7.0/10
+13. [掩码硬件随机性与延迟权衡的自动化设计空间探索](#item-13) ⭐️ 7.0/10
+14. [Cloudflare 工作流新增 Saga 式回滚功能](#item-14) ⭐️ 7.0/10
+15. [Cloudflare 面向所有开发者推出自管理 OAuth](#item-15) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [UA-8295 后门终端的首次详细法证密码分析](https://eprint.iacr.org/2026/1309) ⭐️ 9.0/10
+## [可验证编辑音频的匿名溯源方案](https://eprint.iacr.org/2026/1308) ⭐️ 8.0/10
 
-该论文首次对真实世界中被植入后门的 UA-8295 消息终端进行了详细的法证密码分析，揭示了其后门设计和潜在攻击的见解，并提出了用于推理后门设计的‘后门猜想’框架。 这项工作之所以重要，是因为它罕见地公开分析了一种由国家行为体植入后门的加密设备，增进了对真实世界后门技术的理解。‘后门猜想’为分析和识别后门提供了系统性方法，这对密码安全和数字取证至关重要。 UA-8295 是一种短突发消息终端，其后门由美国国家安全局（NSA）植入。论文对加密算法进行了逆向工程，并运用法证密码分析推断后门可能的目的和攻击向量。该研究是法证层面的分析，并未实际利用后门。
+一种名为 PPAAS（隐私保护音频认证系统）的新型密码系统被提出，它能在不泄露原始录音、编辑操作或录制设备身份的情况下，验证编辑后音频的真实性。该系统利用零知识证明将来源可信性和编辑正确性绑定到一个隐藏的见证上。 该研究解决了音频认证与隐私保护之间的根本矛盾，使编辑后的音频可作为可靠证据使用而无须暴露敏感内容，对数字取证、新闻和法律等同时需要可验证性和保密性的领域具有重要意义。 PPAAS 提供了两种构造：基于分段的方法仅对实际编辑的片段生成零知识证明，适用于稀疏编辑的低成本场景；基于迭代的方法采用增量可验证计算（IVC），在编辑密集时更为高效。两种方法均将验证过程压缩为单个证明，隐藏了所有敏感见证数据。
 
-rss · IACR ePrint 密码学论文 · 6月23日 11:53
+rss · IACR ePrint 密码学论文 · 6月23日 10:51
 
-**背景**: UA-8295 是飞利浦公司设计的军用级短突发消息终端，用于安全通信。后来披露，NSA 在其加密算法中植入了后门，可能用于拦截和解密消息。法证密码分析涉及在数字取证背景下检查密码系统的漏洞，以了解它们可能被利用的方式。‘后门猜想’是本文提出的新框架，用于推理后门的设计和预期用途。
+**背景**: 传统音频认证依赖与原始录音绑定的数字签名，验证时需公开原始文件，与隐私需求相悖。零知识证明允许在不泄露秘密的情况下证明相关陈述，匿名凭证可在不暴露身份的情况下验证属性。增量可验证计算（IVC）可高效验证长序列计算。PPAAS 结合这些技术，实现了编辑音频的匿名认证。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/stef/UA-8295-NSA">GitHub - stef/UA-8295-NSA: fully reverse-engineered and re-implemented ...</a></li>
-<li><a href="https://www.cryptomuseum.com/crypto/philips/ua8295/files/ua8295_man.pdf">PDF SHOR-BURSTT MESSAGE TERMNIAL - cryptomuseum.com</a></li>
+<li><a href="https://eprint.iacr.org/2026/1308">Trust the Voice, Hide the Source: Anonymous Provenance for Verifiably Edited Audio</a></li>
 
 </ul>
 </details>
 
-**标签**: `#cryptography`, `#backdoor`, `#forensic analysis`, `#signal intelligence`, `#national security`
+**标签**: `#privacy-preserving`, `#audio-authentication`, `#cryptographic-protocols`, `#provenance`, `#anonymous-credentials`
 
 ---
 
 <a id="item-2"></a>
-## [可验证编辑音频的匿名溯源新方案](https://eprint.iacr.org/2026/1308) ⭐️ 8.0/10
+## [钱包用户干预设计抵御授权钓鱼攻击](https://eprint.iacr.org/2026/1310) ⭐️ 8.0/10
 
-研究人员提出了一种隐私保护音频认证系统（PPAAS），利用零知识证明验证编辑后的音频来自授权设备且经过允许的编辑，同时不泄露原始录音、编辑操作或设备身份。 该方案解决了音频取证中完整性与机密性的矛盾，使音频证据在认证和编辑时既能保护隐私，又不损害可信度，对法律、新闻及举报等领域有重大影响。 提供了两种构造：分段式方法仅对活跃编辑片段使用零知识证明（适合稀疏编辑），迭代式方法利用增量可验证计算与零知识压缩（适合密集编辑）。实际评估表明了二者的效率权衡。
+研究人员设计并测试了四种基于钱包的干预措施——支出上限建议、主动支出者警告、被动支出者警告和延迟确认——以抵御授权钓鱼攻击。在一项涉及 364 名参与者的组间实验和后续访谈中，这些干预措施提高了用户设置支出上限和取消钓鱼任务的比例。 授权钓鱼是一种日益猖獗的 Web3 威胁，攻击者诱骗用户授予代币支出权限。该研究通过实证表明，基于钱包界面的干预措施可有效减少此类攻击，为超越 URL 检测的实用防御层提供了证据。 支出上限建议显著提高了用户设置支出上限的行为；主动支出者警告和延迟确认显著增加了对钓鱼任务的取消率，而被动支出者警告的增加并不显著。用户仍难以解读可疑信号，常忽视批准细节。
 
-rss · IACR ePrint 密码学论文 · 6月23日 10:51
+rss · IACR ePrint 密码学论文 · 6月23日 16:42
 
-**背景**: 零知识证明允许一方在不泄露额外信息的情况下证明某个陈述为真。设备认证可验证设备硬件和软件的真实性与完整性。PPAAS 结合匿名溯源技术，在隐藏来源和编辑历史的同时仍能验证音频的真实性。
+**背景**: 授权钓鱼攻击诱骗用户签署交易，授予攻击者从其钱包中花费代币的权限。在以太坊等区块链中，代币标准（如 ERC-20）允许用户批准智能合约代表其转移指定数量的代币，这一机制常被钓鱼诈骗利用。由于攻击者经常劫持合法网站，钱包界面便成为用户验证的关键环节。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Zero-knowledge_proof">Zero-knowledge proof</a></li>
-<li><a href="https://www.ninjaone.com/it-hub/it-service-management/device-attestation/">What Is Device Attestation? | NinjaOne</a></li>
+<li><a href="https://www.chainalysis.com/blog/what-is-approval-phishing/">What Is Approval Phishing ? Detect & Disrupt Crypto Scams at Scale</a></li>
+<li><a href="https://support.ledger.com/article/Ethereum-Token-Approvals-Explained">Understanding Ethereum Token Approvals - support.ledger.com</a></li>
+<li><a href="https://blocksec.com/blog/how-to-avoid-being-a-web3-phishing-victim">How to Avoid Being a Web3 Phishing Victim - BlockSec Blog</a></li>
 
 </ul>
 </details>
 
-**标签**: `#privacy`, `#audio-authentication`, `#zero-knowledge-proofs`, `#digital-forensics`, `#cryptography`
+**标签**: `#security`, `#cryptocurrency`, `#phishing`, `#user-interface`, `#wallet`
 
 ---
 
 <a id="item-3"></a>
-## [面向三分之二诚实多数的通信高效恶意安全多方计算协议](https://eprint.iacr.org/2026/1307) ⭐️ 8.0/10
+## [对植入后门的 UA-8295 消息终端的取证密码分析](https://eprint.iacr.org/2026/1309) ⭐️ 8.0/10
 
-该研究提出了一种基于编译器的安全多方计算协议，利用沙米尔秘密共享和本地验证框架，通过注入新鲜随机性和批量打开操作，实现抗三分之一腐败方的恶意安全，并降低了通信开销。 该研究为恶意安全的多方计算提供了更高效的通信方案，这对于隐私保护机器学习等实际应用至关重要，因为强安全性通常伴随着高昂的通信成本。 该协议适用于最多 t < n/3 个腐败方的情况，通过注入新鲜随机性来检测使用错误乘法三元组时的作弊行为，并用本地度-2t 计算和单次批量打开取代了多次乘法验证。
+该论文首次对植入后门的 UA-8295 消息终端进行了详细的取证密码分析，研究了其后门的设计方式及所针对的攻击。同时提出了一个“后门猜想”，以帮助推理现实世界中的密码后门。 这项工作为国家层面设计的密码后门提供了罕见的公开见解，这类信息通常高度保密。它有助于安全社区理解现实世界的威胁，并可能为防御策略和政策讨论提供参考。 UA-8295 是由诺基亚开发、飞利浦销售的短消息突发终端，据报被 NSA 植入了后门。论文引入了一个“后门猜想”，作为分析后门设计原理及其预期攻击的概念框架。
 
-rss · IACR ePrint 密码学论文 · 6月23日 08:55
+rss · IACR ePrint 密码学论文 · 6月23日 11:53
 
-**背景**: 安全多方计算允许多方在不泄露私有输入的情况下联合计算函数。沙米尔秘密共享将秘密分割为若干份额，只有达到门限数量的份额才能恢复秘密。恶意安全模型保护协议免受任意偏离协议的敌手攻击，而半诚实模型仅防止被动窃听。基于编译器的方法通过添加验证阶段，将半诚实协议转化为恶意安全协议。
+**背景**: UA-8295 消息终端是 20 世纪 80 年代开发的一种加密短消息突发通信设备，用于隐蔽通信。取证密码分析是将密码分析技术应用于调查场景；在此案例中，用于逆向工程和理解疑似后门。历史上，国家机构曾试图削弱密码标准或产品以促进信号情报收集，但此类后门的具体细节很少公开披露。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Shamir's_secret_sharing">Shamir's secret sharing</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation">Secure multi-party computation - Wikipedia</a></li>
-<li><a href="https://drum.lib.umd.edu/items/2780657c-82d2-44fc-bdf9-d0260fd8ba1c">A New Paradigm for Practical Maliciously Secure Multi-Party Computation</a></li>
+<li><a href="https://eprint.iacr.org/2026/1309">Forensic Cryptanalysis of the Backdoored UA-8295 Message Terminal</a></li>
+<li><a href="https://www.cryptomuseum.com/crypto/philips/ua8295/">Short-burst message terminal with encryption</a></li>
 
 </ul>
 </details>
 
-**标签**: `#secure multi-party computation`, `#malicious security`, `#Shamir secret sharing`, `#communication efficiency`, `#cryptographic protocols`
+**标签**: `#cryptanalysis`, `#backdoor`, `#forensic analysis`, `#cryptography`, `#signal intelligence`
 
 ---
 
 <a id="item-4"></a>
-## [通过规范编码修复实现 SQIsign 的强不可伪造性](https://eprint.iacr.org/2026/1305) ⭐️ 8.0/10
+## [基于本地验证的高效恶意安全多方计算协议](https://eprint.iacr.org/2026/1307) ⭐️ 8.0/10
 
-研究人员发现 SQIsign v2.0 中一个具体的可延展性漏洞：将签名中的基变换矩阵 M_chl 模 2^N 取负可产生不同的有效签名，类似于 ECDSA 的可延展性。他们提出了规范矩阵编码修复方案，并证明修改后的方案在量子随机谕言模型下实现了 SUF-CMA 安全性。 这填补了 SQIsign 在 NIST 标准化过程中安全性证明的关键缺口。强不可伪造性可防止签名可延展性攻击，确保对手无法在无密钥的情况下修改已有签名，这对交易账本和智能合约的安全至关重要。 修复方案将 M_chl 规范化为标准形式，并在验证时拒绝非规范形式，从而建立了单射响应编码。概念验证攻击在全部三个 NIST 安全级别的 C 参考实现上得到演示。
+该论文提出了一种基于编译器的多方计算协议，可在最多 t<n/3 腐败方的情况下实现恶意安全性，并使用 Shamir 秘密共享。它引入了一个本地验证框架，通过用本地 2t 次计算和批量打开替代多次乘法验证，降低了通信开销。 恶意安全性提供了针对主动攻击的更强保障，对实际应用至关重要。这项工作提高了通信效率，使实用的恶意多方计算更易于实现。 该协议假设静态恶意敌手控制不到三分之一的参与方。它利用 2t 次多项式进行本地验证，在保持统计安全性的同时降低了通信开销，允许很小的误差。
 
-rss · IACR ePrint 密码学论文 · 6月23日 04:21
+rss · IACR ePrint 密码学论文 · 6月23日 08:55
 
-**背景**: SQIsign 是基于同源的主流后量子签名方案，拥有小密钥和签名尺寸但计算开销较高。存在性不可伪造性（EUF-CMA）仅保证无法伪造新签名，而强不可伪造性（SUF-CMA）还禁止将合法签名修改为新的有效签名。可延展性风险包括交易重放攻击和分布式系统的不一致性。
+**背景**: 安全多方计算允许参与方在不泄露各自输入的前提下联合计算函数。半诚实敌手遵循协议但试图窃取信息，恶意敌手则可能任意偏离协议。Shamir 秘密共享将秘密分割成份额，需达到门限数量才能重构，常用于有限域上的 MPC。诚实多数场景下 MPC 通常更高效；三分之二诚实多数（t<n/3）是恶意敌手存在时实现信息论安全的标准设置。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/SQIsign">SQIsign</a></li>
-<li><a href="https://blog.cryptographyengineering.com/euf-cma-and-suf-cma/">EUF-CMA and SUF-CMA – A Few Thoughts on Cryptographic Engineering</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation">Secure multi-party computation - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shamir's_secret_sharing">Shamir's secret sharing</a></li>
 
 </ul>
 </details>
 
-**标签**: `#post-quantum cryptography`, `#digital signatures`, `#isogeny-based cryptography`, `#SQIsign`, `#SUF-CMA`
+**标签**: `#Secure Multi-Party Computation`, `#Malicious Security`, `#Shamir Secret Sharing`, `#Communication Efficiency`, `#Cryptography`
 
 ---
 
 <a id="item-5"></a>
-## [白宫行政令要求 2030 年前迁移至后量子密码](https://blog.cloudflare.com/post-quantum-eo-2026/) ⭐️ 8.0/10
+## [白宫后量子行政令设定 2030 年迁移期限](https://blog.cloudflare.com/post-quantum-eo-2026/) ⭐️ 8.0/10
 
-白宫发布行政令，要求联邦机构在 2030 年前完成后量子密码迁移。Cloudflare 随后发表了对该行政令的分析，并提供了面向政府和行业的迁移指南。 该行政令首次为美国政府的后量子迁移设定了具体期限，迫使公共和私营部门立即行动，升级密码系统以防范未来的量子威胁。Cloudflare 的指南为实现这一目标提供了可操作的步骤。 行政令要求在 2030 年前盘点加密资产并测试后量子算法；Cloudflare 建议先采用混合证书并优先保护关键系统。
+白宫发布行政令，要求联邦机构在 2030 年前采用后量子密码学，Cloudflare 提供了详细的迁移指导手册。 该行政令推动后量子密码的紧急采用，保护国家安全免受未来量子攻击，并为全球行业标准树立先例。 虽然行政令针对联邦系统，但 Cloudflare 的指导手册将范围延伸至私营部门，强调分阶段迁移、算法敏捷性以及尽管期限设在 2030 年仍需立即行动的重要性。
 
 rss · Cloudflare Blog (PQ 迁移) · 6月23日 18:25
 
-**背景**: 后量子密码学旨在开发能抵御量子计算机攻击的算法。量子计算机可通过 Shor 算法破解 RSA 和 ECC 等现行公钥密码。为防范‘现在收集，以后解密’的威胁，各机构正加快向抗量子算法迁移。美国 NIST 于 2024 年发布了首批后量子密码标准。
+**背景**: 后量子密码学旨在开发能抵抗量子攻击的算法，量子计算机可能破解 RSA 和 ECC 等现有公钥方法。2030 年期限应对了‘先窃取、后解密’的威胁，即对手现在存储加密数据以供未来解密。2024 年，NIST 发布了首批三项后量子密码标准，包括 ML-KEM 和 ML-DSA，为迁移提供了基础。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Post-quantum_cryptography">Post-quantum cryptography</a></li>
-<li><a href="https://csrc.nist.gov/projects/post-quantum-cryptography">Post-Quantum Cryptography - NIST CSRC - National Institute of Standards and Technology</a></li>
+<li><a href="https://csrc.nist.gov/projects/post-quantum-cryptography">Post-Quantum Cryptography | CSRC | CSRC</a></li>
 
 </ul>
 </details>
 
-**标签**: `#post-quantum cryptography`, `#executive order`, `#Cloudflare`, `#migration`, `#cybersecurity`
+**标签**: `#post-quantum`, `#cryptography`, `#executive order`, `#cybersecurity`, `#migration`
 
 ---
 
 <a id="item-6"></a>
-## [德国法院裁定谷歌 AI 概览责任成立](https://www.schneier.com/blog/archives/2026/06/ai-and-liability.html) ⭐️ 8.0/10
+## [漏洞报告不再特殊](https://words.filippo.io/vuln-reports/) ⭐️ 8.0/10
 
-德国法院裁定，谷歌对其 AI 生成的搜索摘要中的虚假陈述承担责任，驳回了用户应自行核实信息的辩护。 该裁决确立了 AI 生成内容可归责于部署公司的法律先例，可能影响全球 AI 责任标准和平台问责机制。 法院指出 AI 摘要是谷歌商业活动的表现，不能以用户可核实为由免责；谷歌的 AI 概览是核心搜索功能，无法关闭。
+Filippo Valsorda 指出，大语言模型（LLM）使得任何人都能发现软件漏洞，这降低了传统漏洞报告的特殊地位，因为这类报告过去依赖于专家洞察和保密性。 漏洞发现的大众化可能让安全团队收到大量报告，改变传统的披露做法，并挑战原有的负责任漏洞处理模式。 尽管 LLM 使漏洞发现普及化，但它们可能产生误报且缺乏经验丰富研究人员的细致理解，然而大量的报告仍可能使人工分类负担加重。
 
-rss · Schneier on Security · 6月25日 17:03
+rss · Filippo Valsorda (Go 密码学) · 6月23日 13:00
 
-**背景**: 互联网责任法传统上区分传输者（如电话公司，不对内容负责）和发布者（如报纸，需负责）。在美国，第 230 条通常使平台对第三方内容免责。谷歌于 2023 年推出的 AI 概览功能直接生成摘要，挑战了这些界限。
+**背景**: 传统上，发现软件漏洞需要深厚的技术专长，通常由安全研究人员负责发现并负责任地披露。企业依赖这些报告并保密以保护用户。随着大语言模型（LLM）在大量代码库上训练，任何人都可以查询这些模型来识别潜在的安全问题，从根本上改变了这一格局。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/AI_Overviews">AI Overviews - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Section_230">Section 230 - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI`, `#liability`, `#legal`, `#Google`, `#content moderation`
+**标签**: `#security`, `#vulnerability`, `#LLM`, `#AI`, `#cybersecurity`
 
 ---
 
 <a id="item-7"></a>
-## [LLMs 凭风格而非标签辨识角色，致提示注入攻击持续](https://www.schneier.com/blog/archives/2026/06/interesting-paper-exploring-prompt-injection.html) ⭐️ 8.0/10
+## [德国法院裁定谷歌对 AI 搜索摘要负责](https://www.schneier.com/blog/archives/2026/06/ai-and-liability.html) ⭐️ 8.0/10
 
-一项新研究发现，大语言模型（LLMs）是通过文本风格而非显式角色标签来识别指令来源的，这削弱了当前依赖角色分离的提示注入防御措施。 这揭示了提示注入是一个根本性缺陷，而非表面问题：攻击者利用风格线索即可绕过基于角色的防御，因此除非 LLMs 具备真正的角色感知能力，否则注入攻击将是一场长期的‘打地鼠’游戏。 论文提出了‘角色混淆’概念，即模型根据文本的‘听感’而非标签来识别来源。通过内部‘角色探针’，他们发现这种混淆能强有力地预测注入攻击的成功，甚至在模型生成输出之前就能检测。
+德国一家法院裁定，谷歌对其 AI 生成的搜索摘要内容负有法律责任，驳回了用户应自行核实信息的辩护理由。 该裁决为追究 AI 系统运营者对其输出内容的责任开创了先例，可能重塑全球 AI 责任法律框架，并影响科技公司在用户端产品中部署 AI 的方式。 法院明确驳回了谷歌关于用户通常知道 AI 生成信息不可盲目信任的辩护，转而将 AI 摘要归类为'谷歌商业活动的表达'。
 
-rss · Schneier on Security · 6月25日 11:23
+rss · Schneier on Security · 6月25日 17:03
 
-**背景**: 提示注入是一种攻击方式，攻击者将恶意指令嵌入外部数据中，操纵大语言模型（LLM）的行为。通常，系统使用角色标签（如<system>、<user>）来分隔提示的不同部分并构建安全边界，但这项研究挑战了模型能真正理解这些角色的假设。
+**背景**: 互联网法律历来区分'传输者'（如电话公司，不对传输内容负责）和'发布者'（如报纸，对发布内容负责）。AI 生成的摘要模糊了这一界限，因为它们涉及自动生成反映运营商业务活动的内容。此案是更广泛讨论的一部分：AI 输出应被视为单纯的数据传输还是编辑内容。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://arxiv.org/abs/2603.12277">[2603.12277] Prompt Injection as Role Confusion</a></li>
-<li><a href="https://www.gilesthomas.com/2026/06/role-confusion">Thoughts on Role Confusion - Giles' blog</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI security`, `#prompt injection`, `#LLMs`, `#adversarial attacks`, `#role confusion`
+**标签**: `#AI liability`, `#legal ruling`, `#Google`, `#AI search`, `#internet law`
 
 ---
 
 <a id="item-8"></a>
-## [间谍软件嵌入禁用文本逃避 AI 分析](https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html) ⭐️ 8.0/10
+## [LLM 无法真正感知角色，提示注入威胁持续](https://www.schneier.com/blog/archives/2026/06/interesting-paper-exploring-prompt-injection.html) ⭐️ 8.0/10
 
-恶意软件开发者开始在间谍软件代码注释中嵌入关于核武器和生物武器的文本，诱使基于人工智能的分析工具拒绝扫描文件。 这种手段利用了人工智能安全过滤器，表明攻击者可将负责任的人工智能防护措施武器化。这威胁到自动化安全分析，需要更强大的上下文感知扫描器。 恶意注释包含伪造的系统指令和违反政策的内容，位于基于 eval 的 ROT 编码载荷之前。真实恶意代码在注释后才执行，因此运行时不受影响，但解析文件头的人工智能扫描器可能被误导而拒绝分析。
+一项新研究表明，大语言模型并非真正理解“系统”或“用户”等角色标签，而是通过文本块中的风格模式来区分指令。因此，提示注入攻击可通过模仿权威风格而非单纯操纵标签来绕过防御。 这一发现表明，基于角色标签的安全架构存在根本缺陷，使提示注入防御成为持久的“打地鼠”游戏。所有大模型应用，尤其是具备网页浏览或文件上传功能的，将持续面临威胁，除非模型能实现真正的角色感知。 该研究引入“角色混淆”作为关键指标，发现混淆程度越高，攻击成功率越大。研究还揭示角色边界是连续的，使攻击者可通过看似无害的文本微妙改变模型状态。
 
-rss · Schneier on Security · 6月24日 11:03
+rss · Schneier on Security · 6月25日 11:23
 
-**背景**: AI 安全扫描器通常使用大型语言模型分析代码，有时会优先处理文件开头。ROT 密码是一种简单的字母替换加密，在此用于混淆恶意软件。模型上下文协议（MCP）是连接 AI 与外部数据的开放标准；该间谍软件针对 MCP 开发者，显示出定向攻击意图。
+**背景**: 提示注入是一种攻击，利用大语言模型无法区分系统提示与用户输入的特性，通过特制输入覆盖原始指令。大模型交互通常使用角色标签（如系统、用户、助手）来隔离可信指令与不可信输入，但这种隔离常流于表面。间接提示注入可发生在大模型处理包含隐藏对抗性提示的外部内容（如网页或上传文件）时。本研究发现，模型内部表示并未将角色标签编码为明确的安全边界，这动摇了当前防御的基础假设。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Rotor_cipher_machine">Rotor cipher machine</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Model_Context_Protocol">Model Context Protocol</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Prompt_injection">Prompt injection</a></li>
+<li><a href="https://www.lesswrong.com/posts/d8xDGzCEYE639qqEv/a-theory-of-prompt-injection-and-why-you-should-study-roles">A Theory of Prompt Injection (and why you should study roles )</a></li>
+<li><a href="https://role-confusion.github.io/">Prompt Injection as Role Confusion</a></li>
 
 </ul>
 </details>
 
-**标签**: `#cybersecurity`, `#adversarial AI`, `#malware`, `#AI safety`, `#espionage`
+**标签**: `#prompt-injection`, `#LLM`, `#AI-security`, `#machine-learning`, `#research`
 
 ---
 
 <a id="item-9"></a>
-## [可调密钥交替 Feistel 密码的后量子安全性](https://eprint.iacr.org/2026/1312) ⭐️ 7.0/10
+## [NIST 发布物联网网络安全指南修订草案](https://csrc.nist.gov/pubs/sp/800/213/r1/ipd) ⭐️ 8.0/10
 
-该论文证明了在 Q1 模型下，当敌手可量子访问内部公开随机函数时，可调密钥交替 Feistel 密码（TKAF）在多密钥场景中的后量子安全性。它扩展了 Basak 等人（ASIACRYPT 2025）的非可调版本证明，表明 3 轮 TKAF 实现 TPRP 安全，4 轮 TKAF 实现 STPRP 安全。 这项工作增强了后量子时代对称密钥密码学的理论基础，特别是对广泛用于磁盘加密和认证加密的可调分组密码而言。通过量化量子攻击下的具体安全边界，它为未来抗量子敌手的设计提供了指导。 证明采用ε-AXU 哈希函数族注入调柄，并表明在多密钥场景下，至少需要Ω(2^(n/3)/ℓ^(2/3))次经典与量子查询组合，或Ω(ε^(-1/2))次经典查询才能攻破 TPRP/STPRP 安全性，其中ℓ为多密钥设置中的预言机数量。
+NIST 发布了 SP 800-213 第 1 次修订版的初始公开草案，更新了联邦机构将物联网产品作为系统元素纳入风险管理以制定其网络安全要求的指南。 此更新使联邦机构能更好地评估和缓解物联网相关风险，强化政府系统的网络安全态势，并影响采购与集成实践。 草案强调，物联网产品的集成可能改变系统风险评估，并要求从 NIST SP 800-53 中选取额外控制措施；文件还包含专利声明征集。
 
-rss · IACR ePrint 密码学论文 · 6月23日 18:35
+rss · NIST CSRC Drafts (标准草案) · 6月24日 04:00
 
-**背景**: Feistel 密码（如 DES）采用轮结构，用密钥化函数变换一半分组。密钥交替 Feistel 密码在每轮函数前后异或密钥。可调分组密码通过额外调柄输入改变行为，常借哈希函数注入。Q1 模型允许敌手对内部原语进行量子叠加访问，但对构造预言机仅允许经典访问。后量子安全性确保方案能抵抗拥有量子计算机的攻击者，这是量子计算发展下的关键领域。
+**背景**: NIST SP 800-213 最初于 2021 年发布，是联邦物联网网络安全指南系列的一部分，与 NIST SP 800-53 的安全控制目录互补。SP 800-213A 提供了详细的要求目录。此修订版与 NIST 风险管理框架保持一致，以应对不断变化的物联网威胁。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://infoscience.epfl.ch/server/api/core/bitstreams/2147e5cc-e4ee-49a4-b7a3-11eae1e0b3b3/content">Tweaking Key - Alternating Feistel Block</a></li>
-<li><a href="https://eprint.iacr.org/2025/945.pdf">PDF Quantum Security Analysis of the Key-Alternating Ciphers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/NIST_SP_800-53">NIST SP 800-53</a></li>
+<li><a href="https://www.nist.gov/itl/applied-cybersecurity/nist-cybersecurity-iot-program/sp-800-213-series">SP 800-213 Series | NIST</a></li>
+
+</ul>
+</details>
+
+**标签**: `#IoT`, `#cybersecurity`, `#NIST`, `#federal government`, `#risk management`
+
+---
+
+<a id="item-10"></a>
+## [GSMA 发布电信通用语料库：10B+ tokens 开放数据集](https://www.gsma.com/newsroom/article/telco-common-corpus-the-largest-open-verified-data-commons-for-telecom-ai/) ⭐️ 8.0/10
+
+GSMA 与法国 AI 初创公司 Pleias 合作，在 GSMA 开放电信 AI 倡议下发布了电信通用语料库（TCC），这是一个包含超过 100 亿 tokens 的经过许可验证的电信数据开放数据集，旨在帮助运营商、供应商和研究机构构建电信专用 AI 模型。 这是目前最大的电信领域开放且经过许可验证的数据共享集，解决了电信 AI 开发中高质量、开放许可数据稀缺的问题。它将促进电信 AI 在网络优化和客户服务等场景的应用，同时确保合规性。 该语料库包含超过 100 亿 tokens，数据经过开放许可验证，是 Pleias 公司 2.27 万亿 tokens 通用语料库的子集。数据集可能涵盖技术文档、标准、报告等，但并非实时更新，且可能不涵盖所有电信子领域。
+
+rss · GSMA Newsroom (移动安全标准) · 6月25日 08:56
+
+**背景**: 电信 AI 利用机器学习优化网络管理、客服等。大语言模型（LLM）的微调依赖领域专用数据。开放数据共享集避免了版权风险，促进协作。GSMA 是代表全球移动运营商的行业协会，Pleias 是专长 LLM 训练数据的法国初创公司。通用语料库（Common Corpus）是目前最大的开放文本数据集，本语料库是其电信子集。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.telecompaper.com/news/gsma-and-pleias-release-open-ai-dataset-for-telecom-sector--1575277">GSMA and Pleias release open AI dataset for telecom sector</a></li>
+<li><a href="https://www.open-telco.ai/data/">Telecom AI Datasets | Training Data for Telco Models - GSMA</a></li>
+
+</ul>
+</details>
+
+**标签**: `#telecom`, `#AI dataset`, `#open data`, `#GSMA`, `#natural language processing`
+
+---
+
+<a id="item-11"></a>
+## [多密钥设置下可调 Feistel 密码的后量子安全证明](https://eprint.iacr.org/2026/1312) ⭐️ 7.0/10
+
+该论文在内部原语量子访问模型下，证明了 3 轮和 4 轮可调密钥交替 Feistel 密码（TKAF）的后量子安全性，将先前经典结果扩展至多密钥量子场景。 随着量子计算威胁的迫近，这些针对 Feistel 结构的正式安全保证对设计抗量子对称密码至关重要，确保了面对量子敌手时的机密性。 安全界要求至少Ω(2^{n/3}/ℓ^{2/3})次经典与量子组合查询，或Ω(ε^{-1/2})次经典查询，其中ε是几乎异或通用哈希函数的碰撞概率，ℓ为多密钥设置中经典预言机数量。
+
+rss · IACR ePrint 密码学论文 · 6月23日 18:35
+
+**背景**: 可调密钥交替 Feistel 密码采用 Feistel 网络，每轮先将密钥与依赖调柄的值异或，再应用公开随机函数。TPRP（可调伪随机置换）和 STPRP（强 TPRP）模型分别针对选择明文和选择密文攻击。Q1 模型假设敌手可量子访问内部原语，但仅经典访问密码实例。后量子对称密码学确保设计能抵御 Grover、Simon 等量子算法。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://eprint.iacr.org/2026/1312">Post-Quantum Security of Tweakable Key-Alternating Feistel Ciphers in the Multi-Key Setting</a></li>
+<li><a href="https://link.springer.com/chapter/10.1007/978-3-030-57808-4_4">Tweaking Key-Alternating Feistel Block Ciphers | SpringerLink</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Universal_hashing">Universal hashing - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**标签**: `#cryptography`, `#post-quantum`, `#symmetric-key`, `#security-proof`, `#feistel-cipher`
-
----
-
-<a id="item-10"></a>
-## [钱包干预措施降低授权钓鱼风险](https://eprint.iacr.org/2026/1310) ⭐️ 7.0/10
-
-该论文提出并评估了四种钱包内干预措施：支出上限建议、主动授权者警告、被动授权者警告和延迟确认，一项有 364 名参与者的用户研究表明，这些措施能提高用户设置支出上限和取消钓鱼交易等保护行为。 授权钓鱼是 Web3 中日益严重的威胁，现有基于 URL 的检测手段不足；这些钱包端干预在授权时刻提供最后一道防线，对改进钱包设计和用户安全具有直接影响。 主动授权者警告和延迟确认条件显著提高了取消率，而被动授权者警告的提升不具统计显著性；支出上限建议有效鼓励了设置上限，但用户有时难以解读可疑线索。
-
-rss · IACR ePrint 密码学论文 · 6月23日 16:42
-
-**背景**: 授权钓鱼利用以太坊等区块链中的代币授权机制，即 ERC-20 的 approve 函数允许用户授予智能合约花费其代币的权限。攻击者诱骗用户向恶意合约授予无限授权，随后无需私钥即可转移资金。钱包会显示授权详情，但用户经常忽略。这种纵深防御方法旨在让授权参数的验证更加突出。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.chainalysis.com/blog/what-is-approval-phishing/">What Is Approval Phishing ? Detect & Disrupt Crypto Scams at Scale</a></li>
-<li><a href="https://support.ledger.com/article/Ethereum-Token-Approvals-Explained">Understanding Ethereum Token Approvals</a></li>
-<li><a href="https://support.metamask.io/stay-safe/safety-in-web3/what-is-a-token-approval/">What is a token approval? | MetaMask Help Center</a></li>
-
-</ul>
-</details>
-
-**标签**: `#approval phishing`, `#Web3 security`, `#user study`, `#wallet design`, `#HCI`
-
----
-
-<a id="item-11"></a>
-## [TETRIS：掩码硬件中随机性-延迟权衡的自动化设计空间探索](https://eprint.iacr.org/2026/1306) ⭐️ 7.0/10
-
-TETRIS 引入两种启发式算法（MLRC 和 MRLC），自动探索基于组件的掩码硬件中随机性与延迟之间的权衡。与先前全局优化方法相比，它在不到一毫秒内完成探索，实现了可比的面积结果，速度提升数个数量级。 该工具使硬件安全工程师能够在随机性或延迟约束下快速找到最优掩码设计，减少开发工作量，并可能增强对侧信道攻击的抵御能力。 TETRIS 利用了 PINI 组件固有的结构化权衡，其算法——随机性约束下最小化延迟（MLRC）和延迟约束下最小化随机性（MRLC）互为对偶。它在亚毫秒级时间内运行，并实现与现有最优方法相当甚至更好的面积。
-
-rss · IACR ePrint 密码学论文 · 6月23日 08:39
-
-**背景**: 掩码是一种抵抗侧信道攻击的对策，将秘密值分割成多个随机份额。基于组件的掩码使用对应简单逻辑门的预验证组件（gadget）构建安全电路。安全阶数（份额数减一）决定所需的随机性和延迟。PINI（Probe-Isolating Non-Interference）是一种可组合性概念，确保组件能够安全组合。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://artifacts.iacr.org/tches/2024/a5/">Gadget-based Masking of Streamlined NTRU Prime Decapsulation in Hardware - IACR</a></li>
-<li><a href="https://casa.rub.de/fileadmin/img/Publikationen_PDFs/2021_Automated_Generation_of_Masked_Hardware_Publication_ClusterofExcellence_CASA_Bochum.pdf">Automated Generation of Masked Hardware</a></li>
-
-</ul>
-</details>
-
-**标签**: `#hardware security`, `#side-channel attacks`, `#masking`, `#design space exploration`, `#randomness`
+**标签**: `#post-quantum cryptography`, `#symmetric-key cryptography`, `#Feistel ciphers`, `#security proofs`, `#quantum security`
 
 ---
 
 <a id="item-12"></a>
-## [Cloudflare 向所有开发者提供自主管理型 OAuth](https://blog.cloudflare.com/oauth-for-all/) ⭐️ 7.0/10
+## [BN 配对子群被证明为相对迹映射核](https://eprint.iacr.org/2026/1311) ⭐️ 7.0/10
 
-Cloudflare 在完成其核心 OAuth 引擎的零停机迁移后，现已向所有开发者提供自主管理型 OAuth。 这简化了应用集成，减少了入驻障碍，并赋予开发者更自主地在 Cloudflare 平台上构建和扩展应用的能力。 零停机迁移确保在无缝部署新 OAuth 引擎时，现有用户的服务不会中断。
+这篇新论文（ePrint 2026/1311）首次严格证明了 Barreto-Naehrig（BN）曲线的配对子群恰为 n-torsion 点上相对迹映射的核，证实了一个长期存在但未被证明的假设。 该成果巩固了基于配对密码学的理论基础，尤其是对于零知识证明协议（如 zkSNARKs）中广泛使用的 BN 曲线，确保依赖此性质的安全证明和实现坚实可靠。 该证明通过限制在 n-torsion 点上的相对迹映射显式刻画了配对子群，给出了此前仅为经验之谈的几何描述。
 
-rss · Cloudflare Blog (PQ 迁移) · 6月24日 06:00
+rss · IACR ePrint 密码学论文 · 6月23日 17:04
 
-**背景**: OAuth 是一种标准协议，允许应用程序在无需共享密码的情况下代表用户访问资源。Cloudflare 运营着一个提供安全和性能服务的全球网络，其应用生态系统允许第三方开发者构建集成工具。自主管理型 OAuth 让开发者完全掌控身份验证凭证，无需 Cloudflare 手动审批。
+**背景**: Barreto-Naehrig（BN）曲线是 2005 年提出的一类配对友好椭圆曲线，因其在基于配对密码学中的高效性而被广泛用于 zkSNARKs 等系统。相对迹映射是一种与 Weil descent 和迹零子代数相关的代数工具，用于将扩展域上椭圆曲线的点映射到子域上曲线的点。n-torsion 点是指阶整除 n 的点。配对子群是双线性配对取值为 1 的点组成的子群。尽管该子群与相对迹之间的联系被广泛认可，但此前缺乏正式证明。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://grokipedia.com/page/Zero-Downtime_Migration">Zero-Downtime Migration</a></li>
+<li><a href="https://deepwiki.com/scipr-lab/dizk/5-barreto-naehrig-curves">Barreto-Naehrig Curves | scipr-lab/dizk | DeepWiki</a></li>
+<li><a href="https://math.mit.edu/~drew/TraceZeroVarieties.html">Trace Zero Varieties - MIT Mathematics</a></li>
 
 </ul>
 </details>
 
-**标签**: `#OAuth`, `#Cloudflare`, `#Developer Tools`, `#Zero-Downtime Migration`, `#Authentication`
+**标签**: `#Cryptography`, `#Elliptic Curves`, `#Pairing-Based Cryptography`, `#Barreto-Naehrig Curves`, `#Mathematical Proof`
 
 ---
 
 <a id="item-13"></a>
-## [Java SSLContext 协议名称陷阱：易引发安全配置错误](https://neilmadden.blog/2026/06/23/javas-sslcontext-protocol-name-is-a-footgun/) ⭐️ 7.0/10
+## [掩码硬件随机性与延迟权衡的自动化设计空间探索](https://eprint.iacr.org/2026/1306) ⭐️ 7.0/10
 
-一篇博文警告，Java 开发者经常误用 SSLContext.getInstance，传入‘TLSv1.3’等 TLS 版本字符串，这会意外地限制协议支持，构成安全陷阱。 这种错误配置可能导致与仅支持其他 TLS 版本的服务器的连接中断，并不经意间削弱安全性，从而影响大量 Java 应用的可靠性和安全性。 正确参数应为‘TLS’或‘SSL’，这会启用一组默认的多种协议；使用‘TLSv1.2’等特定版本字符串会将上下文锁定为仅该版本，引发兼容性和安全性问题。
+本文提出了两种对偶算法——随机性约束下最小化延迟（MLRC）和延迟约束下最小化随机性（MRLC），用于自动寻找掩码硬件中最优的 gadget 分配方案，相比当前最先进的全局 SAT 优化方法实现了数个数量级的加速。 这项工作能够高效地按用户约束优化掩码硬件，大幅缩短设计时间，同时增强抵御侧信道攻击的能力，并可能通过让安全-性能权衡更易于实现来影响密码工程领域。 该方法利用基于 gadget 的掩码中探查隔离非干扰（PINI）gadget 的结构化权衡，在不到一毫秒内提供可比或更优的面积结果，避免了昂贵的全局优化。
 
-rss · Neil Madden (后量子密码) · 6月23日 20:12
+rss · IACR ePrint 密码学论文 · 6月23日 08:39
 
-**背景**: 在 Java 中，SSLContext 是配置 SSL/TLS 连接的核心类。getInstance(String protocol)方法期望一个协议族名称，而非版本号。标准安全提供者支持‘TLS’、‘SSL’等协议族，它们会自动启用所有合适且安全的协议版本。使用‘TLSv1.2’这样的版本字符串会绕过这种智能选择，强制限定在单一版本。
+**背景**: 掩码硬件将敏感数据分割为多个份额以抵御侧信道攻击。基于 gadget 的掩码使用预设计的掩码组件（gadget），其随机性和延迟成本已知，且随掩码阶数变化。设计空间探索（DSE）系统地搜索设计备选方案以优化性能和成本等参数。本文自动化该过程以平衡掩码电路中的随机性与延迟。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://docs.oracle.com/javase/8/docs/api/javax/net/ssl/SSLContext.html">SSLContext (Java Platform SE 8 )</a></li>
-<li><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html">SSLContext (Java SE 11 & JDK 11 )</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Design_space_exploration">Design space exploration</a></li>
+<li><a href="https://eprint.iacr.org/2016/486">Domain-Oriented Masking: Compact Masked Hardware Implementations with Arbitrary Protection Order</a></li>
+<li><a href="https://tches.iacr.org/index.php/TCHES/article/view/877">Hardware Masking, Revisited | IACR Transactions on Cryptographic Hardware and Embedded Systems</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Java`, `#TLS`, `#security`, `#SSL`, `#footgun`
+**标签**: `#hardware security`, `#side-channel attacks`, `#design space exploration`, `#masking`, `#cryptographic engineering`
 
 ---
 
 <a id="item-14"></a>
-## [专家称大型语言模型降低漏洞报告的特殊性](https://words.filippo.io/vuln-reports/) ⭐️ 7.0/10
+## [Cloudflare 工作流新增 Saga 式回滚功能](https://blog.cloudflare.com/rollbacks-for-workflows/) ⭐️ 7.0/10
 
-Filippo Valsorda 认为，随着大型语言模型（LLM）的兴起，任何人现在都能生成类似的安全见解，因此机密漏洞披露可能不再必要。 这挑战了传统的漏洞披露模式，可能影响漏洞赏金计划、安全研究以及公司处理安全漏洞的方式。 该文章缺乏技术深度，更像是一个引发讨论的挑衅性观点；它没有提供实证证据或关于 LLM 发现漏洞的具体能力说明。
+Cloudflare 的持久化执行引擎 Workflows 现在支持 Saga 式回滚，允许开发者为每个 step.do() 附加一个补偿操作，以便在发生故障时自动撤销已完成的步骤。 该功能简化了复杂分布式工作流中的错误处理，减少了手动清理工作，并确保跨服务的数据一致性，这对于生产级无服务器应用至关重要。 回滚功能以元数据形式直接附加在每个持久化步骤上，而不是作为一个独立的全局错误处理程序，它利用现有的 Workflows 执行日志来确定需要调用哪些补偿操作。
 
-rss · Filippo Valsorda (Go 密码学) · 6月23日 13:00
+rss · Cloudflare Blog (PQ 迁移) · 6月25日 13:00
 
-**背景**: 大型语言模型（LLM）是像 GPT-4 这样的 AI 系统，可以理解和生成文本。漏洞披露通常是指研究人员向供应商秘密报告安全缺陷，以便他们在公开发布前修复，保护用户。
+**背景**: Cloudflare Workflows 是 Cloudflare Workers 上的一个服务，用于以持久化方式运行多步骤应用程序——自动重试并在故障时保存状态。Saga 模式常见于微服务架构，通过定义补偿事务来撤销先前步骤的影响，从而在后续步骤失败时维护数据一致性。持久化执行确保每个步骤都会被重试直到成功，但过去缺乏回滚机制，开发者需手动处理部分失败。通过集成 Saga 回滚，Workflows 现在提供了一种声明式方法来撤销已完成步骤，符合行业最佳实践。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Large_language_model">Large language model - Wikipedia</a></li>
+<li><a href="https://blog.cloudflare.com/rollbacks-for-workflows/">How we built saga rollbacks for Cloudflare Workflows</a></li>
+<li><a href="https://developers.cloudflare.com/workflows/">Overview · Cloudflare Workflows docs</a></li>
 
 </ul>
 </details>
 
-**标签**: `#cybersecurity`, `#vulnerability-disclosure`, `#LLM`, `#AI`, `#software-security`
+**标签**: `#cloudflare`, `#workflows`, `#serverless`, `#rollbacks`, `#durable-execution`
 
 ---
 
 <a id="item-15"></a>
-## [Anthropic 的 Fable 5 安全模型数日内遭越狱](https://www.schneier.com/blog/archives/2026/06/anthropics-fable-5-model-jailbroken-within-days.html) ⭐️ 7.0/10
+## [Cloudflare 面向所有开发者推出自管理 OAuth](https://blog.cloudflare.com/oauth-for-all/) ⭐️ 7.0/10
 
-Anthropic 的 Claude Fable 5 模型旨在防止生成网络攻击，但在发布后数日内即被越狱，网络安全新闻对此进行了报道。 此次迅速越狱凸显了将强大 AI 模型与安全目标对齐的持续挑战，引发了人们对防护措施有效性及网络安全信任度的担忧。 Fable 5 是 Anthropic 的 Mythos Preview 的安全导向变体，后者是一个具有强大网络安全能力、仅限研究预览的模型。绕过安全限制是通过未公开的提示工程技术实现的。
+Cloudflare 现在向所有开发者提供自管理 OAuth，使他们能够创建和管理自己的 OAuth 客户端，以委托方式访问 Cloudflare API。该公告附带一篇技术博客，详细介绍了 Cloudflare 如何对其核心 OAuth 引擎执行零停机迁移。 此功能简化了第三方应用程序与 Cloudflare 服务的集成，通过消除共享登录凭据的需求来增强安全性。它使开发者社区能够在 Cloudflare 平台上构建更强大的应用生态系统。 自管理 OAuth 功能支持基于令牌的委托访问，实现细粒度控制。零停机迁移涉及详细的工程设计，以确保在过渡期间持续提供服务。
 
-rss · Schneier on Security · 6月23日 11:03
+rss · Cloudflare Blog (PQ 迁移) · 6月24日 06:00
 
-**背景**: Anthropic 的 Mythos Preview 是一款专长于网络安全任务的尖端 AI 模型，最初仅向经过审查的防御者发布。Fable 5 通过增加阻拦恶意用途（特别是网络攻击生成）的防护栏，打造了一个更安全的公开可用版本。AI 中的越狱是指通过精心设计的输入绕过安全约束的方法。
+**背景**: OAuth（开放授权）是一种行业标准协议，用于授权，允许用户在不透露密码的情况下，授予网站或应用程序对其在其他服务上资源的有限访问权限。Cloudflare 的平台包括 Workers、Pages 和 R2 等服务，第三方应用程序可利用其 API。此前，OAuth 客户端管理受到更多限制；自管理 OAuth 将控制权交到开发者手中。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Claude Fable 5 and Claude Mythos 5 \ Anthropic</a></li>
-<li><a href="https://www.reddit.com/r/Anthropic/comments/1u4wjbi/fable_5_was_the_best_model_out_there_anyone_think/">Fable 5 was the best model out there — anyone think it's actually coming back after the gov directive? : r/Anthropic - Reddit</a></li>
+<li><a href="https://news.ycombinator.com/item?id=48668033">OAuth for all - Hacker News</a></li>
+<li><a href="https://www.facebook.com/Cloudflare/posts/self-managed-oauth-is-now-available-to-all-developers-on-cloudflare-heres-how-we/1482385660584815/">Self-Managed OAuth is now available to all developers on Cloudflare. Here's how we executed a zero-downtime migration of our core OAuth engine to make it happen. https://cfl.re/4vsBr18</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 在 Reddit 上，用户注意到 Fable 5 如此迅速被越狱的讽刺意味，一些人批评该模型过度限制，并就政府指令下的未来展开辩论。
-
-**标签**: `#AI safety`, `#jailbreaking`, `#cybersecurity`, `#Anthropic`
+**标签**: `#cloudflare`, `#oauth`, `#authentication`, `#api`, `#security`
 
 ---
